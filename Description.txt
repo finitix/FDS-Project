@@ -1,0 +1,53 @@
+Project Title
+Blockchain Document Integrity Verifier
+
+Description
+A web application that proves whether a document is original or tampered.
+It stores a document’s unique hash (digital fingerprint) on the Ethereum blockchain.
+The actual file stays off-chain; only the hash is stored to ensure security and trust.
+
+
+Purpose / Core Use
+To verify the authenticity of important documents.
+To ensure no one can edit, fake, or modify a document without detection.
+Provides tamper-proof proof of existence and ownership.
+
+Real-Time Usage
+Used to verify certificates, mark sheets, and degrees.
+Used for legal documents like agreements, contracts, and property papers.
+Ensures business audit and compliance records are not modified.
+Helps artists and creators prove ownership of digital art or intellectual property.
+Can store medical records securely for future verification.
+
+Technology Stack
+Blockchain: Ethereum (Ganache local test network)
+Smart Contract: Solidity
+Backend: Node.js with Express
+Blockchain Integration: Web3.js
+Database: MongoDB with Mongoose
+Frontend: React (with Axios)
+
+Step-by-Step Project Flow
+Install required tools: Node.js, React, Ganache, Truffle.
+Write a simple Solidity smart contract to store and read document hashes.
+Deploy the smart contract to Ganache to get a contract address.
+Build the Express backend and connect it to MongoDB and the blockchain.
+Integrate Web3.js in backend to interact with the smart contract.
+Create API endpoints to register a document hash and verify it.
+In the React frontend, compute the document hash (SHA-256) before uploading.
+Build UI to upload, register, verify documents, and show proof details.
+
+How to Run (Short & Simple)
+Start Ganache (local blockchain).
+Deploy contract using Truffle.
+Start backend server with Node.
+Start React frontend.
+Open browser → upload → register → verify documents.
+
+Learning Outcomes
+Learn how to combine MERN stack with Blockchain.
+Understand how to write, deploy, and use smart contracts.
+Learn Web3.js for blockchain interaction from backend.
+Gain experience in deciding what to store on-chain vs off-chain.
+Understand file hashing using SHA-256 for tamper detection.
+Build a complete real-world blockchain project from start to finish.
